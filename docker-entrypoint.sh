@@ -75,6 +75,8 @@ if [ "$KEYCLOAK_IMPORT" ]; then
     SYS_PROPS+=" -Dkeycloak.import=$KEYCLOAK_IMPORT"
 fi
 
+SYS_PROPS+=" -Dkeycloak.profile.feature.upload_scripts=enabled"
+
 ########################
 # JGroups bind options #
 ########################
